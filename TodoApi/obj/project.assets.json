@@ -856,7 +856,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Npgsql/4.1.0": {
+      "Npgsql/4.1.3": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "4.6.0"
@@ -868,19 +868,19 @@
           "lib/netcoreapp3.0/Npgsql.dll": {}
         }
       },
-      "Npgsql.EntityFrameworkCore.PostgreSQL/3.0.0": {
+      "Npgsql.EntityFrameworkCore.PostgreSQL/3.1.3": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "3.0.0",
-          "Microsoft.EntityFrameworkCore.Abstractions": "3.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "3.0.0",
-          "Npgsql": "4.1.0"
+          "Microsoft.EntityFrameworkCore": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Abstractions": "3.1.3",
+          "Microsoft.EntityFrameworkCore.Relational": "3.1.3",
+          "Npgsql": "4.1.3"
         },
         "compile": {
-          "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+          "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
         }
       },
       "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.1": {
@@ -3971,10 +3971,10 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Npgsql/4.1.0": {
-      "sha512": "c1qdtewUjM8XC0uPntSNIw1ZhIK7nTUwUH7libNQLNUFyEgMPuK0cgtZtIlw6xhraDv31M8dYzUFCdut4BwVvg==",
+    "Npgsql/4.1.3": {
+      "sha512": "sWTXCb6WPPO7WEw4+1XoRqE49EdWmuyMA15LVbzV6jZgRxYWK8TbdniWMjguzmAgOZVYTmrCf+jsqPYoSqACvA==",
       "type": "package",
-      "path": "npgsql/4.1.0",
+      "path": "npgsql/4.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3990,22 +3990,22 @@
         "lib/netstandard2.1/Npgsql.dll",
         "lib/netstandard2.1/Npgsql.pdb",
         "lib/netstandard2.1/Npgsql.xml",
-        "npgsql.4.1.0.nupkg.sha512",
+        "npgsql.4.1.3.nupkg.sha512",
         "npgsql.nuspec",
         "postgresql.png"
       ]
     },
-    "Npgsql.EntityFrameworkCore.PostgreSQL/3.0.0": {
-      "sha512": "BrWVUVq9+J3Cn6txwulwlDfPweKwXIlHXUEdHGXhn8zZULwF/HljPOuSXBNitJhTJmEi0gSK5kIyb5jHUEV1kg==",
+    "Npgsql.EntityFrameworkCore.PostgreSQL/3.1.3": {
+      "sha512": "OsuFPlLHx8fyZQOF6e1AOOZ5Wn93eMAGyMihTe/06WEfTy/a367XwU9xJR+sqfvwXKUy+fvLafgFVG0etLTklQ==",
       "type": "package",
-      "path": "npgsql.entityframeworkcore.postgresql/3.0.0",
+      "path": "npgsql.entityframeworkcore.postgresql/3.1.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
-        "lib/netstandard2.1/Npgsql.EntityFrameworkCore.PostgreSQL.pdb",
-        "npgsql.entityframeworkcore.postgresql.3.0.0.nupkg.sha512",
-        "npgsql.entityframeworkcore.postgresql.nuspec"
+        "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "npgsql.entityframeworkcore.postgresql.3.1.3.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
       ]
     },
     "Npgsql.EntityFrameworkCore.PostgreSQL.Design/1.1.1": {
@@ -8442,7 +8442,7 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.3",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.2",
       "NpgSql.EntityFrameworkCore.PostgreSQL.Design >= 1.1.1",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.0.0"
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.3"
     ]
   },
   "packageFolders": {
@@ -8451,11 +8451,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/student/CodeSchool/VS_Code_Projects/REST_practice/API_Practice/TodoApi/TodoApi.csproj",
+      "projectUniqueName": "/home/student/CodeSchool/VS_Code_Projects/TodoApi/TodoApi.csproj",
       "projectName": "TodoApi",
-      "projectPath": "/home/student/CodeSchool/VS_Code_Projects/REST_practice/API_Practice/TodoApi/TodoApi.csproj",
+      "projectPath": "/home/student/CodeSchool/VS_Code_Projects/TodoApi/TodoApi.csproj",
       "packagesPath": "/home/student/.nuget/packages/",
-      "outputPath": "/home/student/CodeSchool/VS_Code_Projects/REST_practice/API_Practice/TodoApi/obj/",
+      "outputPath": "/home/student/CodeSchool/VS_Code_Projects/TodoApi/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/student/.nuget/NuGet/NuGet.Config"
@@ -8508,7 +8508,7 @@
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
-            "version": "[3.0.0, )"
+            "version": "[3.1.3, )"
           }
         },
         "imports": [

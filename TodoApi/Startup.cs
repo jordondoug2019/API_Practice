@@ -27,9 +27,11 @@ namespace TodoApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<TodoContext>(options =>
-    options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddControllers().AddNewtonsoftJson();;
+            services.AddDbContext<TodoContext>(opt =>
+               opt.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddControllers().AddNewtonsoftJson();
+;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,8 +42,8 @@ namespace TodoApi
                 app.UseDeveloperExceptionPage();
             }
 
-    app.UseDefaultFiles();
-             app.UseStaticFiles();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
             app.UseHttpsRedirection();
 
             app.UseRouting();
